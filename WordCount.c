@@ -10,6 +10,10 @@ int main(int argc, char *argv[]) {
 
 	fp = fopen(argv[2], "r");
 
+	printf("-----------------------------\n");
+	printf("此次统计的模式为：%s\n", argv[1]);
+	printf("此次统计的文本为：%s\n", argv[2]);
+
 	if (fp == NULL) {
 		printf("无法打开%s\n", argv[2]);
 		exit(1);
@@ -47,4 +51,6 @@ int main(int argc, char *argv[]) {
 			printf("输入参数错误\n");
 		}
 	}
+
+	printf("-----------------------------\n");
 }
